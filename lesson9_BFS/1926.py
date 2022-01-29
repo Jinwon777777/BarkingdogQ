@@ -8,7 +8,7 @@ visited = [[False]* m for _ in range(n)]
 dx = [-1, 0, 1, 0]
 dy = [0, -1, 0, 1]
 
-def bfs(x, y):
+def bfs(x: int, y: int) -> int:
     this_cnt = 1
     que = deque([])
     que.append((x, y))
