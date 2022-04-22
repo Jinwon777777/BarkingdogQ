@@ -11,7 +11,7 @@ for _ in range(n):
 		num_dict[num] = 1
 		card_val.add(num)
 num_dict = sorted(num_dict.items())
-### num_dict = sorted(num_dict.items(), key=(-num_dict[1]), num_dict[0])
+### num_dict = sorted(num_dict.items(), key= lambda x : (-x[1],x[0])
 ans = [0,0]
 for k, v in num_dict:
 	if v > ans[1]:
